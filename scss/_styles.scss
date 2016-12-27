@@ -1,0 +1,109 @@
+$green: #7BC143;
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fff;
+  background-image: url("../img/matt_ritter.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: #333;
+  margin: 0;
+  font-family: "proxima-nova",sans-serif;
+}
+
+a,
+a:visited{
+  @include transition(all 0.25s ease-in-out);
+  color: #333;
+  
+  &:hover{
+    color: #000;
+  }
+  
+}
+
+.home-wrap{
+  position: absolute;
+  top: 50%;
+  margin-top: -126px;
+  margin-left: 20px;
+  
+  @media #{$medium-up} {
+    left: 50%;
+    margin-top: -112px;
+    margin-left: -328px;
+    text-align: center;
+  }
+
+}
+
+.headline{
+  font-weight: 600;
+  @include animation-delay(1s);
+  margin-bottom: 10px;
+}
+
+.sub-headline{
+  margin-bottom: 15px;
+  font-weight: 400;
+  @include animation-delay(1.50s);
+}
+
+.social{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 2.4rem;
+  
+  .social__item{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .dribbble{
+    @include animation-delay(2s);
+    
+    a:hover{ color: #ea4c89; }
+    
+  }
+  
+  .twitter{
+    @include animation-delay(2.25s);
+    
+    a:hover{ color: #00aced }
+    
+  }
+  
+  .medium{
+    @include animation-delay(2.50s);
+    
+    a:hover{ color: #0AE370; }
+    
+  }
+  
+  .tumblr{
+    @include animation-delay(2.75s);
+    
+     a:hover{ color: #35465c; }
+    
+  }
+  
+  .lastfm{
+    @include animation-delay(3s);
+    
+     a:hover{ color: #D01F3C; }
+    
+  }
+  
+}
